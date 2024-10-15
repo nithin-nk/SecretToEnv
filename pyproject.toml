@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "secrettoenv"
+version = "0.1.0"
+description = "Python package to convert Kubernetes secrets into .env files with key-value pairs for easier local development."
+authors = ["nithin-nk <nithin08anil@gmail.com>"]
+license = "Nithin Anil"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.1.7"
+kubernetes = "^31.0.0"
+
+[tool.poetry.scripts]
+secrettoenv = "secrettoenv.cli:convert"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
