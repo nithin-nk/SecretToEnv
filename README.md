@@ -32,7 +32,7 @@ Once installed, you can use the `secrettoenv` command to convert a Kubernetes se
 ### Basic Command:
 
 ```bash
-secrettoenv --namespace <namespace> --secret-name <secret_name> --file <file_path> --output-file <output_file>
+secrettoenv --namespace <namespace> --secret-name <secret_name> --output-file <output_file>
 secrettoenv --file <file_path> --output-file <output_file>
 ```
 
